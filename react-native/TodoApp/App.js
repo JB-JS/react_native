@@ -17,7 +17,7 @@ function App() {
   return (
     <SafeAreaView style={styles.block}>
       <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        behavior={Platform.select({ios: 'padding'})}
         style={styles.avoid}>
         <DateHead date={today} />
         <Empty />
