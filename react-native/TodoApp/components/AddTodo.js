@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     alignItems: 'center',
     flexDirection: 'row',
+    textAlign: 'center',
   },
   input: {
     flex: 1,
